@@ -3,8 +3,10 @@
   "item.createbrassiteforge.brassite_sheet": "Brassite Sheet",
   "item.createbrassiteforge.chunk_of_brassite": "Chunk of Brassite",
   "item.createbrassiteforge.hot_brassite_mixture": "Hot Brassite Mixture",
+  "item.createbrassiteforge.brassite_half_ingot": "Brassite Half Ingot",
+  "item.createbrassiteforge.netherite_scrap_fragment": "Netherite Scrap Fragment",
 
   "block.createbrassiteforge.brassite_block": "Brassite Block",
 
-  "creativetab.createbrassiteforge": "Create Brassite Forge"
+  "creativetab.createbrassiteforge_tab": "Create Brassite Forge"
 }

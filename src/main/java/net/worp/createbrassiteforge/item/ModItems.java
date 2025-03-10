@@ -26,4 +26,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> HOT_BRASSITE_MIXTURE = ITEMS.register("hot_brassite_mixture",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> BRASSITE_HALF_INGOT = ITEMS.register("brassite_half_ingot",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> NETHERITE_SCRAP_FRAGMENT = ITEMS.register("netherite_scrap_fragment",
+            () -> new Item(new Item.Properties().stacksTo(64)));
 }
