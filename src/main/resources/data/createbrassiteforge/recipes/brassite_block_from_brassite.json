@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "createbrassiteforge:brassite_ingot"
+    }
+  },
+  "result": {
+    "item": "createbrassiteforge:brassite_block"
+  }
+}
