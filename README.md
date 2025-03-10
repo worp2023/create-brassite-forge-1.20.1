@@ -4,6 +4,6 @@ It will (hopfully) be an addon for the create mod.
 
 ## Credits
 
-The some assets were used or modified from other creators:
+Some assets were used or modified from other creators:
 
 - Textures from [Create](https://github.com/Creators-of-Create/Create/tree/mc1.20.1/dev?tab=readme-ov-file) by simibubi, licensed under the MIT License.
