@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.worp.createbrassiteforge.CreateBrassiteForge;
+import net.worp.createbrassiteforge.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -22,6 +23,7 @@ public class ModCreativeModTabs {
                     pOutput.accept(ModItems.BRASSITE_SHEET.get());
                     pOutput.accept(ModItems.CHUNK_OF_BRASSITE.get());
                     pOutput.accept(ModItems.HOT_BRASSITE_MIXTURE.get());
+                    pOutput.accept(ModBlocks.BRASSITE_BLOCK.get());
                 })
                 .build());
 
