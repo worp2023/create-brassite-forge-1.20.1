@@ -19,6 +19,7 @@ public class ModCreativeModTabs {
                 .title(Component.translatable("Create Brassite Forge"))
                 .displayItems((pParameters,pOutput) -> {
                     pOutput.accept(ModItems.BRASSITE_INGOT.get());
+                    pOutput.accept(ModItems.BRASSITE_SHEET.get());
                 })
                 .build());
 

@@ -17,4 +17,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> BRASSITE_INGOT = ITEMS.register("brassite_ingot",
             () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> BRASSITE_SHEET = ITEMS.register("brassite_sheet",
+            () -> new Item(new Item.Properties().stacksTo(64)));
 }

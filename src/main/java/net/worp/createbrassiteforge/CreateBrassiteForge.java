@@ -30,6 +30,7 @@ public class CreateBrassiteForge
     public CreateBrassiteForge(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        // Pass eventbus to create tab creator
         ModCreativeModTabs.register(modEventBus);
 
         // Pass eventbus to the mod items
@@ -51,9 +52,7 @@ public class CreateBrassiteForge
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BRASSITE_INGOT);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
