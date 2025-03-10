@@ -20,6 +20,8 @@ public class ModCreativeModTabs {
                 .displayItems((pParameters,pOutput) -> {
                     pOutput.accept(ModItems.BRASSITE_INGOT.get());
                     pOutput.accept(ModItems.BRASSITE_SHEET.get());
+                    pOutput.accept(ModItems.CHUNK_OF_BRASSITE.get());
+                    pOutput.accept(ModItems.HOT_BRASSITE_MIXTURE.get());
                 })
                 .build());
 

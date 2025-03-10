@@ -1,4 +1,6 @@
 {
   "item.createbrassiteforge.brassite_ingot": "Brassite Ingot",
-  "item.createbrassiteforge.brassite_sheet": "Brassite Sheet"
+  "item.createbrassiteforge.brassite_sheet": "Brassite Sheet",
+  "item.createbrassiteforge.chunk_of_brassite": "Chunk of Brassite",
+  "item.createbrassiteforge.hot_brassite_mixture": "Hot Brassite Mixture"
 }
