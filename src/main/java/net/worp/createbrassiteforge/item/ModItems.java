@@ -30,7 +30,6 @@ public class ModItems {
     public static final RegistryObject<Item> HOT_BRASSITE_MIXTURE_BUCKET = ITEMS.register("hot_brassite_mixture_bucket",
             () -> new BucketItem(ModFluids.HOT_BRASSITE_MIXTURE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
 
-
     public static final RegistryObject<Item> BRASSITE_HALF_INGOT = ITEMS.register("brassite_half_ingot",
             () -> new Item(new Item.Properties().stacksTo(64)));
 

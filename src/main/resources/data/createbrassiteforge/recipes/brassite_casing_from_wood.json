@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "forge:stripped_wood"
+    },
+    {
+      "item": "createbrassiteforge:brassite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "createbrassiteforge:brassite_casing"
+    }
+  ]
+}

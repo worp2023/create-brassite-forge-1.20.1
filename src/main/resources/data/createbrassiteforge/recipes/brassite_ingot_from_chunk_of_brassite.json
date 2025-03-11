@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createbrassiteforge:chunk_of_brassite"
+    }
+  ],
+  "results": [
+    {
+      "item": "createbrassiteforge:brassite_ingot"
+    }
+  ]
+}

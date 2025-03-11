@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "createbrassiteforge:brassite_ingot"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "count": 1,
+      "item": "createbrassiteforge:brassite_half_ingot"
+    }
+  ]
+}

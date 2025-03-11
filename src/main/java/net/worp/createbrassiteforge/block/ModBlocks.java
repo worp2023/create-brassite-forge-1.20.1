@@ -1,5 +1,6 @@
 package net.worp.createbrassiteforge.block;
 
+import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -22,13 +23,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> BRASSITE_BLOCK = registerBlock("brassite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<CasingBlock> BRASSITE_CASING = registerBlock("brassite_casing",
+            () -> new CasingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
     public static final RegistryObject<LiquidBlock> HOT_BRASSITE_MIXTURE = BLOCKS.register("hot_brassite_mixture_block",
             () -> new LiquidBlock(ModFluids.HOT_BRASSITE_MIXTURE_FLUID, BlockBehaviour.Properties.copy(Blocks.LAVA)));
 
 
-    private static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<Block> toReturn = BLOCKS.register(name, block);
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItems(name, toReturn);
         return toReturn;
     }
@@ -36,6 +39,7 @@ public class ModBlocks {
     private static <T extends Block> RegistryObject<Item> registerBlockItems(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

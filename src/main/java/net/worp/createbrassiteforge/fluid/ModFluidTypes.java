@@ -30,7 +30,6 @@ public class ModFluidTypes {
 
     public static final RegistryObject<FluidType> HOT_BRASSITE_MIXTURE_FLUID_TYPE = register("hot_brassite_mixture", FluidType.Properties.create()
                     .descriptionId("fluid.createbrassiteforge.hot_brassite_mixture")
-                    .lightLevel(5)
                     .density(1000)
                     .viscosity(1000)
                     .temperature(2000)

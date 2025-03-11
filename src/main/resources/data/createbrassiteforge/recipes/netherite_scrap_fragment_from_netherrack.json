@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "chance": 0.01,
+      "item": "createbrassiteforge:netherite_scrap_fragment"
+    }
+  ]
+}

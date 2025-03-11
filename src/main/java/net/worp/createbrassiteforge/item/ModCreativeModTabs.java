@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                 .displayItems((pParameters, pOutput) -> {
                     ModItems.ITEMS.getEntries().forEach(item -> pOutput.accept(item.get()));
                     pOutput.accept(ModBlocks.BRASSITE_BLOCK.get());
+                    pOutput.accept(ModBlocks.BRASSITE_CASING.get());
                 })
                 .build());
 

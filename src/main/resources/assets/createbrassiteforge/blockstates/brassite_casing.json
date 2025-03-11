@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createbrassiteforge:block/brassite_casing"
+    }
+  }
+}

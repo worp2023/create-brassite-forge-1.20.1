@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "create:brass_ingot"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "createbrassiteforge:hot_brassite_mixture"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createbrassiteforge:brassite_half_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "createbrassiteforge:brassite_sheet"
+    }
+  ]
+}
