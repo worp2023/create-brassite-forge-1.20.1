@@ -18,14 +18,9 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder()
                 .icon(() -> new ItemStack(ModItems.BRASSITE_INGOT.get()))
                 .title(Component.translatable("creativetab.createbrassiteforge_tab"))
-                .displayItems((pParameters,pOutput) -> {
-                    pOutput.accept(ModItems.BRASSITE_INGOT.get());
-                    pOutput.accept(ModItems.BRASSITE_SHEET.get());
-                    pOutput.accept(ModItems.CHUNK_OF_BRASSITE.get());
-                    pOutput.accept(ModItems.HOT_BRASSITE_MIXTURE.get());
+                .displayItems((pParameters, pOutput) -> {
+                    ModItems.ITEMS.getEntries().forEach(item -> pOutput.accept(item.get()));
                     pOutput.accept(ModBlocks.BRASSITE_BLOCK.get());
-                    pOutput.accept(ModItems.BRASSITE_HALF_INGOT.get());
-                    pOutput.accept(ModItems.NETHERITE_SCRAP_FRAGMENT.get());
                 })
                 .build());
 
