@@ -38,10 +38,13 @@ public class CreateBrassiteForge
         // Pass eventbus to the mod items
         ModItems.register(modEventBus);
 
+        // Pass eventbus to the mod blocks
         ModBlocks.register(modEventBus);
 
+        // Pass eventbus to the mod fluids
         ModFluids.register(modEventBus);
 
+        // Pass eventbus to the mod fluid types
         ModFluidTypes.register(modEventBus);
 
         // Register the commonSetup method for modloading
