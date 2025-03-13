@@ -2,7 +2,6 @@ package net.worp.createbrassiteforge.fluid;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
-import dev.engine_room.flywheel.api.material.FogShader;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.FogRenderer;
@@ -10,6 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.minecraftforge.fluids.FluidType;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.joml.Vector3f;
 
 import java.util.function.Consumer;
@@ -30,7 +30,6 @@ public class BaseFluidType extends FluidType{
         this.tintColor = tintColor;
         this.fogColor = fogColor;
     }
-
 
     public ResourceLocation getStillTexture() {
         return stillTexture;
@@ -66,13 +65,18 @@ public class BaseFluidType extends FluidType{
             }
 
             @Override
-            public ResourceLocation getOverlayTexture() {
+            public @Nullable ResourceLocation getOverlayTexture() {
                 return overlayTexture;
             }
 
             @Override
             public int getTintColor() {
                 return tintColor;
+            }
+
+            @Override
+            public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level,int renderDistance,float darkenWorldAmount,Vector3f fluidFogColor){
+                return fluidFogColor;
             }
 
             @Override

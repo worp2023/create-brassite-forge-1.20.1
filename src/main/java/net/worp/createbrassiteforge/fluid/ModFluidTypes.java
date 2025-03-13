@@ -3,6 +3,7 @@ package net.worp.createbrassiteforge.fluid;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraftforge.common.SoundAction;
+import net.minecraftforge.common.SoundActions;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -28,15 +29,16 @@ public class ModFluidTypes {
                 () -> new BaseFluidType(HOT_BRASSITE_MIXTURE_STILL_RL,HOT_BRASSITE_MIXTURE_FLOWING_RL,HOT_BRASSITE_MIXTURE_OVERLAY_RL,0xA1aa7240 ,new Vector3f(224f/ 255f,56f / 255f,208f/255f),properties));
     }
 
-    public static final RegistryObject<FluidType> HOT_BRASSITE_MIXTURE_FLUID_TYPE = register("hot_brassite_mixture", FluidType.Properties.create()
-                    .descriptionId("fluid.createbrassiteforge.hot_brassite_mixture")
-                    .density(1000)
-                    .viscosity(1000)
-                    .temperature(2000)
-                    .canDrown(true)
-                    .canExtinguish(false)
-                    .canSwim(true)
-                    .sound(SoundAction.get("item.bucket.empty_lava"), SoundEvents.BUCKET_FILL_LAVA)
-                    .sound(SoundAction.get("item.bucket.fill_lava"), SoundEvents.BUCKET_EMPTY_LAVA)
-            );
+    public static final RegistryObject<FluidType> HOT_BRASSITE_MIXTURE_FLUID_TYPE = register("hot_brassite_mixture_type", FluidType.Properties.create()
+            .descriptionId("fluid.createbrassiteforge.hot_brassite_mixture")
+            .density(1000)
+            .viscosity(1000)
+            .temperature(-1122235467)
+            .lightLevel(0)
+            .canDrown(true)
+            .canExtinguish(false)
+            .canSwim(true)
+            .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+            .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
+    );
 }

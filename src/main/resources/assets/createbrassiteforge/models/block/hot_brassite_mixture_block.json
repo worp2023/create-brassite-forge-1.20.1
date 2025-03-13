@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/lava",
+  "textures": {
+    "particle": "createbrassiteforge:block/hot_brassite_mixture"
+  }
+}
