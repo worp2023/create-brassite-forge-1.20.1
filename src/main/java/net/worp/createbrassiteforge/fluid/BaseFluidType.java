@@ -74,15 +74,16 @@ public class BaseFluidType extends FluidType{
                 return tintColor;
             }
 
+            @NotNull
             @Override
-            public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level,int renderDistance,float darkenWorldAmount,Vector3f fluidFogColor){
-                return fluidFogColor;
+            public Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+                return fogColor;
             }
 
             @Override
             public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
-                RenderSystem.setShaderFogStart(1f);
-                RenderSystem.setShaderFogEnd(6f); //distance when fog starts
+                RenderSystem.setShaderFogStart(0.1f);
+                RenderSystem.setShaderFogEnd(2.0f);
             }
         });
     }
