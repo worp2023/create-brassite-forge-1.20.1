@@ -38,14 +38,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> BRASSITE_HELMET = ITEMS.register("brassite_helmet",
-            () -> new ArmorItem(ModArmorMaterials.BRASS,ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
+            () -> new ArmorItem(ModArmorMaterials.BRASSITE,ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> BRASSITE_CHESTPLATE = ITEMS.register("brassite_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.BRASS,ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+            () -> new ArmorItem(ModArmorMaterials.BRASSITE,ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> BRASSITE_LEGGINGS = ITEMS.register("brassite_leggings",
-            () -> new ArmorItem(ModArmorMaterials.BRASS,ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+            () -> new ArmorItem(ModArmorMaterials.BRASSITE,ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> BRASSITE_BOOTS = ITEMS.register("brassite_boots",
-            () -> new ArmorItem(ModArmorMaterials.BRASS,ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
+            () -> new ArmorItem(ModArmorMaterials.BRASSITE,ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
 }
