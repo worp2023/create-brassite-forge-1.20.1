@@ -5,6 +5,10 @@
   "item.createbrassiteforge.hot_brassite_mixture_bucket": "Hot Brassite Mixture Bucket",
   "item.createbrassiteforge.brassite_half_ingot": "Brassite Half Ingot",
   "item.createbrassiteforge.netherite_scrap_fragment": "Netherite Scrap Fragment",
+  "item.createbrassiteforge.brassite_helmet": "Brassite Helmet",
+  "item.createbrassiteforge.brassite_chestplate": "Brassite Chestplate",
+  "item.createbrassiteforge.brassite_leggings": "Brassite Leggings",
+  "item.createbrassiteforge.brassite_boots": "Brassite Boots",
 
   "block.createbrassiteforge.brassite_block": "Brassite Block",
   "block.createbrassiteforge.brassite_casing": "Brassite Casing",

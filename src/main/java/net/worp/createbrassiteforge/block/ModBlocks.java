@@ -20,13 +20,15 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreateBrassiteForge.MOD_ID);
 
+    public static final DeferredRegister<Block> FLUID_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreateBrassiteForge.MOD_ID);
+
     public static final RegistryObject<Block> BRASSITE_BLOCK = registerBlock("brassite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<CasingBlock> BRASSITE_CASING = registerBlock("brassite_casing",
             () -> new CasingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<LiquidBlock> HOT_BRASSITE_MIXTURE = BLOCKS.register("hot_brassite_mixture_block",
+    public static final RegistryObject<LiquidBlock> HOT_BRASSITE_MIXTURE = FLUID_BLOCKS.register("hot_brassite_mixture_block",
             () -> new LiquidBlock(ModFluids.HOT_BRASSITE_MIXTURE_FLUID, BlockBehaviour.Properties.copy(Blocks.LAVA)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -41,5 +43,6 @@ public class ModBlocks {
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
+        FLUID_BLOCKS.register(eventBus);
     }
 }
