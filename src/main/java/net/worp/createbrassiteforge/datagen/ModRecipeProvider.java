@@ -51,6 +51,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.BRASSITE_INGOT.get()), has(ModItems.BRASSITE_INGOT.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BRASSITE_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.BRASSITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BRASSITE_INGOT.get()), has(ModItems.BRASSITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BRASSITE_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.BRASSITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BRASSITE_INGOT.get()), has(ModItems.BRASSITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BRASSITE_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.BRASSITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BRASSITE_INGOT.get()), has(ModItems.BRASSITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BRASSITE_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.BRASSITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BRASSITE_INGOT.get()), has(ModItems.BRASSITE_INGOT.get()))
+                .save(pWriter);
+
         //2x2
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BRASSITE_INGOT.get())
                 .pattern("AA")

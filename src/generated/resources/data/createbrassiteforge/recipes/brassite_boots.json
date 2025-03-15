@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "createbrassiteforge:brassite_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "A A",
+    "A A"
+  ],
+  "result": {
+    "item": "createbrassiteforge:brassite_boots"
+  },
+  "show_notification": true
+}

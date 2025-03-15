@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brassite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createbrassiteforge:brassite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createbrassiteforge:brassite_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_brassite_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createbrassiteforge:brassite_chestplate"
+    ]
+  },
+  "sends_telemetry_event": false
+}
