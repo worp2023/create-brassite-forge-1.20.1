@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "createbrassiteforge:item/hot_brassite_mixture_bucket"
+  }
+}

@@ -90,6 +90,8 @@ minecraft {
         }
 
         server {
+            property("mixin.env.remapRefMap", "true")
+            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
         }
@@ -98,10 +100,14 @@ minecraft {
         // By default, the server will crash when no gametests are provided.
         // The gametest system is also enabled by default for other run configs under the /test command.
         gameTestServer {
+            property("mixin.env.remapRefMap", "true")
+            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
             property 'forge.enabledGameTestNamespaces', mod_id
         }
 
         data {
+            property("mixin.env.remapRefMap", "true")
+            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
             // example of overriding the workingDirectory set in configureEach above
             workingDirectory project.file('run-data')
 
